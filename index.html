@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>欢迎来到我的网站！</title>
+  <style>
+    body {
+      font-family: "Helvetica", "Arial", sans-serif;
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    /* 👇 修改后的图片样式 - 正方形 */
+    img {
+      width: 400px;           /* 设置宽度 */
+      height: 400px;          /* 设置高度，使其成为正方形 */
+      object-fit: cover;      /* 保持图片比例，裁剪超出部分 */
+      display: block;         /* 独占一行，方便居中 */
+      margin: 20px auto;      /* 水平居中 + 上下留空 */
+      
+      /* 👇 让图片更好看的样式 */
+      border-radius: 16px;    /* 圆角 */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); /* 柔和阴影 */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* 动画过渡 */
+    }
+
+    /* 👇 鼠标悬停时的效果 */
+    img:hover {
+      transform: translateY(-5px);       /* 轻微上浮 */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18); /* 阴影变深 */
+    }
+
+    /* 联系方式区域 */
+    .contact-section {
+      margin: 30px 0;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact-section p {
+      margin-bottom: 15px;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .contact-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FB7299;  /* B站主题色 */
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+
+    .contact-link:hover {
+      background-color: #EA6180;  /* 悬停时的B站色 */
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(251, 114, 153, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">🚀</div>
+  <h1>你好，世界！</h1>
+  <p>我是万伯渊，这是我的第一个公开网站！</p>
+  <p>我正在学习编程，未来会做得更好 💪</p>
+  <p>AI编程一小步，人生一大步 ☘</p>
+  
+  <img src="万伯渊.jpg" alt="我的照片">
+  
+  <!-- 👇 B站链接 -->
+  <div class="contact-section">
+    <p>欢迎关注我！</p>
+    <a href="https://space.bilibili.com/1274633472" target="_blank" class="contact-link">📺 B站主页</a>
+  </div>
+  
+</body>
+</html>
